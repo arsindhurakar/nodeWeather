@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerLinks}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="container_fluid weather">
+        <div class="row-fluid">
+            <div class="col-md-10 col-12 mx-auto" >
+                <form class="weather__input">
+                    <input id="userInput" type='text' placeholder="City name here.." autocomplete="off" autofocus />
+                    <button id="submitBtn">Go</button> 
+                </form>
+                <div class="weather__output">
+                    <div class="weather__outputHead">
+                        <p id="day"></p>
+                        <p id="date"></p>
+                    </div>
+                    <div id="outputBody" class="weather__outputHidden">
+                        <h3 id="cityName"></h3>
+                        <div class="weather__tempStatus">
+                            <h1 class="weather__degree"><span id="temperature"></span>&deg;C </h1>
+                            <span id="tempStatus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+<script src="js/script.js"></script>
+</html>

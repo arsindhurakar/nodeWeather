@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>headerLinks}}
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 error">
+                <div class="error__image">
+                    <img src="images/error-404.png"/>
+                </div>
+                <p>{{errorMessage}}</p>
+                <a href="/"><button>Go Back</button></a>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>
+
